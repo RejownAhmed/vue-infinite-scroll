@@ -4,4 +4,4 @@ This is a vue 3 infinite scroll demo. You can copy the code and reuse.. Just clo
 ```npm install``` - Install all neccessary dependencies <br> 
 ```npm run dev``` - Start the developement serve. 
 
-##See it live: [Stackblitz](https://stackblitz.com/edit/vue3-infinite-scrolling)
+## See it live: [Stackblitz](https://stackblitz.com/edit/vue3-infinite-scrolling)
