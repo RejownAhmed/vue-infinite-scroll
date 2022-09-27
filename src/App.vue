@@ -9,6 +9,7 @@
 </template>
 
 <script setup>
+import Observer from './components/Observer.vue'
 import { ref, onMounted } from "vue"
 
 const page = ref(1)
