@@ -1,7 +1,14 @@
 # Vue 3 Infinite Scroll
-This is a vue 3 infinite scroll demo. You can copy the code and reuse.. Just clone this repository and run the following commands:
 
-```npm install``` - Install all neccessary dependencies <br> 
-```npm run dev``` - Start the developement serve. 
+## How to use it?
+
+Copy the Observer Component from the ```src/components``` folder and use it in your projects. 
+
+To see if working you can either download and run the following commands or visit the example link attached here:
+
+## Commands: 
+ Clone the repository - ``` git clone https://github.com/RejownAhmed/vue-infinite-scroll ``` <br>
+Install all neccessary dependencies - ``` npm install ``` <br> 
+Start the developement server - ``` npm run dev ``` 
 
 ## See it live: [Stackblitz](https://stackblitz.com/edit/vue3-infinite-scrolling)
