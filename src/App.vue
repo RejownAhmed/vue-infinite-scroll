@@ -9,8 +9,7 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
-import Observer from "./components/Observer.vue"
+import { ref, onMounted } from "vue"
 
 const page = ref(1)
 const items = ref([])
@@ -24,6 +23,7 @@ const fetchData = async () => {
     const newItems = await res.json();
     await delay(2000)
     items.value = [...items.value, ...newItems];
+    page.value++
     loading.value = false //As all promise completed hide the loader
     return
   } catch(error){
@@ -31,6 +31,14 @@ const fetchData = async () => {
   }
 }
 
+onMounted(()=>{
+  /*
+  * This is needed for it to work properly
+  * Because sometimes when route changes IntersectionObserver doesn't know the change and
+  * does not load the initial data
+  */
+  fetchData() 
+})
 </script>
 
 <style>
